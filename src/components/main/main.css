@@ -25,6 +25,12 @@
 }
 
 .main__tasks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 100%;
   overflow: auto;
   padding-top: 3%;
@@ -40,7 +46,7 @@
 .main__list {
   list-style: none;
   padding: 0 30px;
-  max-width: 90%;
+  width: 100%;
 }
 
 .main__item {
@@ -128,6 +134,8 @@
   z-index: 1;
   -webkit-transition: .3s;
   transition: .3s;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
 }
 
 .main__input input {
@@ -136,7 +144,7 @@
   width: 0;
   background-color: #fff;
   border-radius: 50px;
-  margin-right: -60px;
+  margin-right: -90px;
   border: 1px solid #65E0C4;
   outline: none;
   opacity: 0;
@@ -162,6 +170,9 @@
   }
   .main__list label {
     max-width: 80%;
+  }
+  .main .long input {
+    width: 250px !important;
   }
 }
 /*# sourceMappingURL=main.css.map */

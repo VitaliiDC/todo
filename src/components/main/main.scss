@@ -22,6 +22,8 @@
         font-size: 20px;
     }
     &__tasks{
+        display: flex;
+        justify-content: center;
         height: 100%;
         overflow: auto;
         padding-top: 3%;
@@ -35,7 +37,7 @@
     &__list{
         list-style: none;
         padding: 0 30px;
-        max-width: 90%;
+        width: 100%;
     }
     &__item{
         display: flex;
@@ -103,13 +105,14 @@
             border: none;
             z-index: 1;
             transition: .3s;
+            transform: translateX(50%);
         }
         input{
             transition: .3s;
             width: 0;
             background-color: #fff;
             border-radius: 50px;
-            margin-right: -60px;
+            margin-right: -90px;
             border: 1px solid #65E0C4;
             outline: none;
             opacity: 0;
@@ -133,6 +136,11 @@
             padding: 0 !important;
             label{
                 max-width: 80%;
+            }
+        }
+        .long{
+            input{
+                width: 250px !important;
             }
         }
     }
