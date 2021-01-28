@@ -10,7 +10,7 @@ const App = () => {
       <Provider store={store}>
         <div className="App">
           <Switch>
-            <Route exact path="/" component={Main} />
+            <Route path="/" component={Main} />
           </Switch>
         </div>
       </Provider>
